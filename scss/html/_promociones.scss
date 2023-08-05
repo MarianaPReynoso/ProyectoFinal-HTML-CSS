@@ -4,24 +4,43 @@ main{
     .promo{
         @extend %texto-parrafo;
     }
-    .card{
-        margin: 40px auto;
-        width: 800px;
-        cursor: pointer;
-        .card-title{
-            margin-top: 150px;
+    .promociones{
+        .paquetes{
+            margin-top: 40px;
         }
-        .card-text{
-            margin-top: 10px;
-        }
-        .card-img{
-            width: 800px;
-            height: 250px;
+        .casa5{
+            width: 60vw;
+            height: 20vw;
             object-fit: cover;
+            margin: 10px auto;
+            cursor: pointer;
+            transition: .5s;
+            border-radius: 4px;
         }
-        .card-img:hover{
+        .casa5:hover{
             transform: scale(1.02);
-            transition: .5s;  
+            box-shadow: 0px 15px 30px -3px rgb(61, 60, 60);
         }
     }
+    // .card{
+    //     margin: 40px auto;
+    //     width: 800px;
+    //     cursor: pointer;
+    //     .card-title{
+    //         margin-top: 150px;
+    //     }
+    //     .card-text{
+    //         margin-top: 10px;
+    //     }
+    //     .card-img{
+    //         width: 800px;
+    //         height: 250px;
+    //         object-fit: cover;
+    //     }
+    //     .card-img:hover{
+    //         transform: scale(1.02);
+    //         transition: .5s;  
+    //     }
+    // }
 }
+
