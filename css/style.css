@@ -1,0 +1,268 @@
+main .parrafo-home, main .promo {
+  margin: 10px 35px;
+  text-align: center; }
+
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+/*GENERAL*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edeec9;
+  align-items: center; }
+  body header {
+    background-color: #A3B18A; }
+    body header .logo {
+      width: 13%; }
+    body header .nav-link:hover {
+      font-weight: bold; }
+  body main h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; }
+  body footer {
+    background-color: #A3B18A;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    bottom: 0; }
+
+/*INDEX*/
+main .slide {
+  transition: 2s; }
+  main .slide .carousel-inner {
+    width: 100%; }
+  main .slide div .carousel-item {
+    height: 25vw;
+    justify-content: center;
+    object-fit: cover; }
+
+main .subtitulo-home {
+  margin-top: 50px;
+  text-align: center; }
+
+main .box-imagen {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  main .box-imagen .card {
+    background-color: #edeec9;
+    display: inline-flex;
+    margin-left: auto; }
+  main .box-imagen .card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    border: #A3B18A;
+    box-shadow: 0px 13px 30px -3px #3d3c3c; }
+  main .box-imagen .casa {
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 300px; }
+
+/*SOBRE NOSOTROS*/
+.container {
+  gap: 10px;
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  align-items: center; }
+  .container main {
+    margin-left: 0;
+    margin-right: 10px;
+    font-size: 1.3rem; }
+    .container main .sobren {
+      justify-content: center;
+      margin: 20px 10px;
+      align-items: center;
+      text-align: justify; }
+      .container main .sobren #ultimo {
+        margin-top: -5px; }
+  .container section {
+    margin: 0; }
+    .container section .casa2 {
+      width: 100%;
+      margin: 50px 30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px; }
+
+/*DESTINOS*/
+main {
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  main .main-titulo {
+    width: 100%;
+    margin-left: 50px;
+    grid-area: main-titulo; }
+
+.container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto auto;
+  justify-content: center;
+  grid-template-areas: "section-uno section-dos"   "section-tres section-cuatro";
+  gap: 10px; }
+  .container2 section.destino {
+    width: 330px;
+    height: 270px;
+    margin: 15px; }
+  .container2 .section-uno {
+    grid-area: section-uno; }
+  .container2 .section-dos {
+    grid-area: section-dos; }
+  .container2 .section-tres {
+    grid-area: section-tres; }
+  .container2 .section-cuatro {
+    grid-area: section-cuatro; }
+  .container2 .destino-img {
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 330px;
+    height: 270px;
+    object-fit: cover; }
+  .container2 .subtitulo {
+    margin-top: -35px;
+    text-align: center;
+    font-size: 24px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black; }
+
+/*PROMOCIONES*/
+main .card {
+  margin: 40px auto;
+  width: 800px;
+  cursor: pointer; }
+  main .card .card-title {
+    margin-top: 150px; }
+  main .card .card-text {
+    margin-top: 10px; }
+  main .card .card-img {
+    width: 800px;
+    height: 250px;
+    object-fit: cover; }
+  main .card .card-img:hover {
+    transform: scale(1.02);
+    transition: .5s; }
+
+/*CONTACTO*/
+fieldset {
+  margin: 20px 420px;
+  padding: 20px;
+  width: 500px; }
+  fieldset label {
+    display: flex;
+    align-items: flex-start; }
+  fieldset input, fieldset textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px; }
+  fieldset .label-boton {
+    display: none; }
+  fieldset .boton {
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px; }
+
+.titulo-cto {
+  font-size: 1.3rem; }
+
+.contacto {
+  margin-left: -5px;
+  text-align: center; }
+  .contacto a {
+    text-decoration: none;
+    color: black; }
+  .contacto .iconos {
+    width: 2%;
+    margin: 0;
+    padding: 0; }
+
+@media screen and (max-width: 600px) {
+  header .logo {
+    display: none; }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .carousel {
+      display: none; }
+    main .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .card .card-img {
+        width: 400px;
+        height: 250px; }
+    main .card:hover {
+      transform: none;
+      transition: none;
+      box-shadow: none; }
+    main form {
+      width: auto; }
+      main form fieldset {
+        margin: 20px 10px;
+        padding: 0;
+        width: auto; }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container2 .destino-img {
+      width: 330px;
+      height: 270px; }
+  section .casa2 {
+    display: none; } }
+
+@media screen and (max-width: 320px) {
+  header .logo {
+    display: none; }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  main .carousel {
+    display: none; }
+  main .casa:hover {
+    box-shadow: none;
+    transform: none; }
+  main .card .card-img {
+    width: 310px;
+    height: 200px; }
+  main .card .card-img:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none; }
+  main form {
+    width: auto; }
+    main form fieldset {
+      margin: 20px 10px;
+      padding: 0;
+      width: auto; }
+  .container2 {
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "section-uno" "section-dos" "section-tres" "section-cuatro"; }
+    .container2 .destino-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 310px;
+      height: 200px; }
+  section .casa2 {
+    display: none; } }

@@ -1,0 +1,58 @@
+/*SOBRE NOSOTROS*/
+
+.container{
+    // display: grid;
+    // grid-template-columns: auto auto;
+    // grid-template-rows: auto auto;
+    // justify-content: center;
+    // align-items: center;
+
+    // grid-template-areas: 
+    // "main-sn box-imagen"
+    // "main-sn box-imagen";
+    gap: 10px;
+
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    // flex-direction: column;
+    main{
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 1.3rem;
+        // .main-sn{
+        //     grid-area: main-sn;
+        // }
+        .sobren{
+            justify-content: center;
+            margin: 20px 10px;
+            align-items: center;
+            text-align: justify;            
+            // #parrafo1{
+            //     margin-top: 40px;
+            // }
+            #ultimo{
+                margin-top: -5px;
+            }
+        }
+    }    
+    section{
+        margin: 0;
+        // .box-imagen{
+        //     grid-area: box-imagen;
+        // }
+        .casa2{
+            width: 100%;
+            // height: 70%;
+            // position: relative;
+            // top: 50px;
+            // left: 50px;  
+            // right: 20px;
+            margin: 50px 30px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
+    }
+}

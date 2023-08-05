@@ -1,0 +1,27 @@
+/*PROMOCIONES*/
+
+main{
+    .promo{
+        @extend %texto-parrafo;
+    }
+    .card{
+        margin: 40px auto;
+        width: 800px;
+        cursor: pointer;
+        .card-title{
+            margin-top: 150px;
+        }
+        .card-text{
+            margin-top: 10px;
+        }
+        .card-img{
+            width: 800px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .card-img:hover{
+            transform: scale(1.02);
+            transition: .5s;  
+        }
+    }
+}

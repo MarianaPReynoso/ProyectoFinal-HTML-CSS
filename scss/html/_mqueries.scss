@@ -1,0 +1,127 @@
+// @media screen and (min-width: 600px){
+//     form{
+//         width: auto;
+//         display: flex;
+//         fieldset{
+//             margin: 20px 10px;
+//             padding: 0;
+//         }
+//     }
+// }
+
+@media screen and (max-width: 600px){
+    header{
+        .logo{
+            display: none;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .carousel{
+            display: none;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card-img{
+                width: 400px;
+                height: 250px;
+            }
+        }
+        .card:hover{
+            transform: none;
+            transition: none;
+            box-shadow: none;
+        }
+        form{
+            width: auto;
+            fieldset{
+                margin: 20px 10px;
+                padding: 0;
+                width: auto;
+            }
+        }
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .destino-img{
+            width: 330px;
+            height: 270px;
+        }
+    }
+    section{
+        .casa2{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header{
+        .logo{
+            display: none;
+        }
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    main{
+        .carousel{
+            display: none;
+        }
+        .casa:hover{
+            box-shadow: none;
+            transform: none;
+        }
+        .card{
+            .card-img{
+                width: 310px;
+                height: 200px;
+            }
+            .card-img:hover{
+                transform: none;
+                transition: none;
+                box-shadow: none;
+            }
+        }
+        form{
+            width: auto;
+            fieldset{
+                margin: 20px 10px;
+                padding: 0;
+                width: auto;
+            }
+        }
+        
+    }
+    .container2{
+        display: grid;
+        grid-template-columns: (1 auto);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "section-uno"
+        "section-dos"
+        "section-tres"
+        "section-cuatro";
+        .destino-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 310px;
+            height: 200px;
+        }
+    }
+    section{
+        .casa2{
+            display: none;
+        }
+    }
+}
+

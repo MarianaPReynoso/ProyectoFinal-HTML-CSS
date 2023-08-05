@@ -1,0 +1,60 @@
+/*DESTINOS*/
+
+main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .main-titulo {
+  width: 100%;
+  margin-left: 50px;
+  grid-area: main-titulo;
+  }
+}
+.container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto auto;
+  justify-content: center;
+  
+  grid-template-areas:
+  "section-uno section-dos"  
+  "section-tres section-cuatro";
+  
+  gap: 10px;  
+
+  section.destino {
+    width: 330px;
+    height: 270px;
+    margin: 15px;
+  }
+  
+  .section-uno {
+    grid-area: section-uno;
+  }
+  
+  .section-dos {
+    grid-area: section-dos;
+  }
+  
+  .section-tres {
+    grid-area: section-tres;
+  }
+  
+  .section-cuatro {
+    grid-area: section-cuatro;
+  }
+  
+  .destino-img {
+    @include imagenes;
+    width: 330px;
+    height: 270px;
+    object-fit: cover;
+  }
+  .subtitulo{
+    margin-top: -35px;
+    text-align: center;
+    font-size: 24px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black;
+  }
+}
