@@ -34,14 +34,9 @@ body{
     }
     footer{
         background-color: $color-principal;
-        position: absolute;
-        // margin-top: 80px;
-        // margin-bottom: 5px;
-        // margin-left: 5px;
-        left: 50%;
-        transform: translate(-50%, 0);
+        position: relative;
+        margin-top: 40px;
         text-align: center;
-        // font-size: 10px;
         bottom: 0;
     }
        

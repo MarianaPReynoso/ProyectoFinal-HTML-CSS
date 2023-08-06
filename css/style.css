@@ -27,9 +27,8 @@ body {
     text-align: center; }
   body footer {
     background-color: #A3B18A;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: relative;
+    margin-top: 40px;
     text-align: center;
     bottom: 0; }
 
@@ -50,7 +49,8 @@ main .subtitulo-home {
 main .box-imagen {
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 10%; }
   main .box-imagen .card {
     background-color: #edeec9;
     display: inline-flex;
@@ -73,6 +73,7 @@ main .box-imagen {
   display: flex;
   width: 100%;
   margin-top: 5%;
+  margin-bottom: 10%;
   align-items: center; }
   .container main {
     margin-left: 0;
@@ -110,7 +111,8 @@ main {
   grid-auto-rows: auto auto;
   justify-content: center;
   grid-template-areas: "section-uno section-dos"   "section-tres section-cuatro";
-  gap: 10px; }
+  gap: 10px;
+  margin-bottom: 10%; }
   .container2 section.destino {
     width: 330px;
     height: 270px;
@@ -155,9 +157,12 @@ main .promociones .casa5:hover {
   transform: scale(1.02);
   box-shadow: 0px 15px 30px -3px #3d3c3c; }
 
+main .ultima-imagen {
+  margin-bottom: 10%; }
+
 /*CONTACTO*/
 fieldset {
-  margin: 20px 420px;
+  margin: 0 auto;
   padding: 20px;
   width: 500px; }
   fieldset label {
@@ -172,6 +177,7 @@ fieldset {
   fieldset .boton {
     width: 50%;
     margin-top: 5px;
+    margin-bottom: 30px;
     margin-left: 100px;
     display: flex;
     justify-content: center;
@@ -182,7 +188,8 @@ fieldset {
   font-size: 1.3rem; }
 
 .contacto {
-  margin-left: -5px;
+  margin-left: auto;
+  margin-bottom: 10%;
   text-align: center; }
   .contacto a {
     text-decoration: none;

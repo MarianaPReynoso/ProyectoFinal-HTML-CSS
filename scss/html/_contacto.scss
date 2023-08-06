@@ -1,7 +1,7 @@
 /*CONTACTO*/
 
 fieldset{
-    margin: 20px 420px;
+    margin: 0 auto;
     padding: 20px;
     width: 500px;
     label{
@@ -19,6 +19,7 @@ fieldset{
     .boton{
         width: 50%;
         margin-top: 5px;
+        margin-bottom: 30px;
         margin-left: 100px;
         display: flex;
         justify-content: center;
@@ -30,7 +31,8 @@ fieldset{
     font-size: 1.3rem;
 }
 .contacto{
-    margin-left: -5px;
+    margin-left: auto;
+    margin-bottom: 10%;
     text-align: center;
     a{
         text-decoration: none;
